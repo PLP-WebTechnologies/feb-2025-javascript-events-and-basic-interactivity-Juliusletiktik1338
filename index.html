@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Events and Interactivity</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    .error {
+      color: red;
+      font-size: 0.9em;
+    }
+    .hidden {
+      display: none;
+    }
+    .interactive-box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1>JavaScript Events and Interactivity</h1>
+
+  <!-- Form Section -->
+  <form id="userForm">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <span id="usernameError" class="error hidden">Username is required.</span>
+    <br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <span id="emailError" class="error hidden">Please enter a valid email.</span>
+    <br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <!-- Interactive Element -->
+  <div class="interactive-box" id="interactiveBox">Click Me!</div>
+
+  <!-- Output Section -->
+  <p id="outputMessage"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
